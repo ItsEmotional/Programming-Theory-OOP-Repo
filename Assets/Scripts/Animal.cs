@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Animal : MonoBehaviour
 {
 
     public float speed = 5;
     public float rotationSpeed = 720;
-    public float jumpSpeed = 25;
+    public float jumpSpeed = 10;
 
     public float ySpeed;
+    public Text screenText;
     private CharacterController characterController;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        DisplayText();
     }
 
 
@@ -25,7 +28,7 @@ public class Animal : MonoBehaviour
         Move();      
     }
 
-    public virtual void Move()
+    public void Move()
     {
         float xDirection = Input.GetAxis("Horizontal");
         float yDirection = Input.GetAxis("Vertical");
@@ -51,6 +54,11 @@ public class Animal : MonoBehaviour
         velocity.y = ySpeed;
         characterController.Move(velocity * Time.deltaTime);
 
+    }
+
+    public virtual void DisplayText()
+    {
+        screenText.text = "I am an animal!";
     }
 
 }

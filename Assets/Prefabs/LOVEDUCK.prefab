@@ -1433,6 +1433,8 @@ MonoBehaviour:
   ySpeed: 0
   screenText: {fileID: 0}
   characterController: {fileID: -3160953503638936215}
+  duckPrefab: {fileID: 2462242412559679374}
+  mainManager: {fileID: 0}
 --- !u!143 &-3160953503638936215
 CharacterController:
   m_ObjectHideFlags: 0

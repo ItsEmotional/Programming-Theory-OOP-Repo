@@ -7,6 +7,7 @@ using System.IO;
 
 public class MainManager : MonoBehaviour
 {
+    public static MainManager Instance { get; private set; }
     public Button cButton;
     public Button dButton;
     public GameObject duckPrefab;
@@ -16,9 +17,17 @@ public class MainManager : MonoBehaviour
 
     void Awake()
     {   
-        DontDestroyOnLoad(gameObject);
-        cButton.onClick.AddListener(StartCat);
-        dButton.onClick.AddListener(StartDuck);
+        if(Instance != null)
+        {
+            Destroy(Instance);
+        }
+        else 
+        {
+            Instance = this;
+        }
+            DontDestroyOnLoad(gameObject);
+            cButton.onClick.AddListener(StartCat);
+            dButton.onClick.AddListener(StartDuck);
     }
 
 public void StartCat()

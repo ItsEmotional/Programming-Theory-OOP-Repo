@@ -11,7 +11,7 @@ void Awake()
 {
     mainManager = GameObject.Find("Main Manager").GetComponent<MainManager>();
     mainManager.SpawnCat();
-    mainManager.SpawnDuck();
+    mainManager.SpawnDuck();   
 }
 
 }

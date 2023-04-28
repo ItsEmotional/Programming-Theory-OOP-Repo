@@ -1368,6 +1368,7 @@ GameObject:
   - component: {fileID: 2462242412559379310}
   - component: {fileID: 2462242412552405490}
   - component: {fileID: 2791308238690200874}
+  - component: {fileID: -3160953503638936215}
   m_Layer: 0
   m_Name: LOVEDUCK
   m_TagString: Untagged
@@ -1431,6 +1432,25 @@ MonoBehaviour:
   jumpSpeed: 25
   ySpeed: 0
   screenText: {fileID: 0}
+  characterController: {fileID: -3160953503638936215}
+--- !u!143 &-3160953503638936215
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462242412559679374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2462999626148897692
 GameObject:
   m_ObjectHideFlags: 0

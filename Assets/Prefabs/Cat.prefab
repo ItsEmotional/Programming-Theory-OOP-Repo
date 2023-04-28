@@ -923,6 +923,7 @@ MonoBehaviour:
   jumpSpeed: 10
   ySpeed: 0
   screenText: {fileID: 0}
+  characterController: {fileID: 8890455607245461427}
 --- !u!1 &8890455606649891953
 GameObject:
   m_ObjectHideFlags: 0

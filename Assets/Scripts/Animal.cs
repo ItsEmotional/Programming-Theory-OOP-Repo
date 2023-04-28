@@ -12,7 +12,7 @@ public class Animal : MonoBehaviour
 
     public float ySpeed;
     public Text screenText;
-    private CharacterController characterController;
+    public CharacterController characterController;
 
     void Start()
     {
